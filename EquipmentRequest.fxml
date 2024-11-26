@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.EquipmentRequestController">
+   <children>
+      <TableView fx:id="tableView" layoutX="318.0" layoutY="72.0" prefHeight="460.0" prefWidth="492.0">
+        <columns>
+          <TableColumn fx:id="equipmentColumn" prefWidth="243.0" text="Equipment" />
+            <TableColumn fx:id="priceColumn" prefWidth="248.0" text="Price" />
+        </columns>
+      </TableView>
+      <VBox layoutX="68.0" layoutY="151.0" prefHeight="200.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment Name:" />
+            <TextField fx:id="equipmentName" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cost:" />
+            <TextField fx:id="equipmentCost" />
+            <Button mnemonicParsing="false" onAction="#requestOnClick" prefHeight="25.0" prefWidth="200.0" text="Request" />
+         </children>
+      </VBox>
+      <Button layoutX="68.0" layoutY="351.0" mnemonicParsing="false" onAction="#removeEvent" prefHeight="38.0" prefWidth="200.0" text="Remove" />
+      <Button layoutX="14.0" layoutY="92.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" text="Go Back" />
+      <Button layoutX="451.0" layoutY="542.0" mnemonicParsing="false" onAction="#showRequestedOnClick" prefHeight="31.0" prefWidth="200.0" text="Show Requested Item" />
+   </children>
+</AnchorPane>

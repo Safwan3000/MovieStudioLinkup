@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="798.0" prefWidth="1212.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.MarketTrendsController">
+   <children>
+      <PieChart fx:id="PieChart" layoutX="122.0" layoutY="34.0" prefHeight="414.0" prefWidth="629.0" style="-fx-border-color: black;" title="Market Trends" />
+      <TextField fx:id="MovieTrendName1" layoutX="221.0" layoutY="490.0" />
+      <TextField fx:id="MovieTrendName2" layoutX="221.0" layoutY="537.0" />
+      <TextField fx:id="MovieTrendName3" layoutX="221.0" layoutY="589.0" />
+      <TextField fx:id="MovieTrendName4" layoutX="221.0" layoutY="640.0" />
+      <TextField fx:id="TrendValue1" layoutX="564.0" layoutY="490.0" />
+      <Text layoutX="68.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Trend Name 1:" />
+      <Text layoutX="68.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Trend Name 2:" />
+      <Text layoutX="68.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Trend Name 3:" />
+      <Text layoutX="68.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Trend Name 4:" />
+      <TextField fx:id="TrendValue2" layoutX="564.0" layoutY="537.0" />
+      <TextField fx:id="TrendValue3" layoutX="564.0" layoutY="589.0" />
+      <TextField fx:id="TrendValue4" layoutX="564.0" layoutY="639.0" />
+      <Text layoutX="451.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trend 1 Value:" />
+      <Text layoutX="451.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trend 2 Value:" />
+      <Text layoutX="451.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trend 3 Value:" />
+      <Text layoutX="451.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trend 4 Value:" />
+      <Button fx:id="AdditemsButton" layoutX="277.0" layoutY="701.0" mnemonicParsing="false" onAction="#AddItemstoChartOnClick" text="Add Items to Chart" />
+      <Button fx:id="LoadPieChartButton" layoutX="440.0" layoutY="701.0" mnemonicParsing="false" onAction="#LoadPieChartButtonOnClick" text="Load Pie Chart" />
+      <Button layoutX="21.0" layoutY="34.0" mnemonicParsing="false" onAction="#GoBackButtonOnClick" text="Go Back" />
+      <Button fx:id="ClickOpenfile" layoutX="861.0" layoutY="277.0" mnemonicParsing="false" onAction="#click_OpenFile" prefHeight="84.0" prefWidth="238.0" text="Open Pie Chart Data in Text Area" />
+      <TextArea fx:id="textArea" layoutX="772.0" layoutY="50.0" prefHeight="200.0" prefWidth="422.0" />
+   </children>
+</AnchorPane>

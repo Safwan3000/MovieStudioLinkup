@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.WriteAScriptController1">
+   <children>
+      <TextField fx:id="SetProjectName" layoutX="197.0" layoutY="42.0" />
+      <Text layoutX="68.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Project Name:" />
+      <TextArea fx:id="ScriptTextArea" layoutX="55.0" layoutY="128.0" prefHeight="235.0" prefWidth="498.0" />
+      <Text layoutX="68.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write Your Script:" />
+      <Button fx:id="SaveScriptButton" layoutX="244.0" layoutY="388.0" mnemonicParsing="false" onAction="#SaveScriptButtonOnClick" text="Save Script" />
+      <Button fx:id="SetTitleButton" layoutX="397.0" layoutY="41.0" mnemonicParsing="false" onAction="#SetTitleButtonOnClick" text="Set Title" />
+      <Button layoutX="30.0" layoutY="429.0" mnemonicParsing="false" onAction="#gobackonclick" text="Go Back" />
+      <Button fx:id="AskforFeedbackButton" layoutX="457.0" layoutY="429.0" mnemonicParsing="false" onAction="#AskforFeedbackButtonOnClick" text="Ask for Feedback" />
+   </children>
+</AnchorPane>

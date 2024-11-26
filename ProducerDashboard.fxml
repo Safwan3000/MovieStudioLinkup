@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ProducerDashboardController">
+    <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Producer">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#HomeOnClick" text="Home" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Projects">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#SelectDirectorSceneOnClick" text="Hire Director" />
+                  <MenuItem mnemonicParsing="false" onAction="#SelectCinematographerSceneOnClick" text="Hire Cinematographer" />
+                  <MenuItem mnemonicParsing="false" onAction="#GetProjectFromStExSceneOnClick" text="Get Project Topics" />
+                  <MenuItem mnemonicParsing="false" onAction="#SendProposalWriterOnClick" text="Send Proposal (Writer)" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Chats">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToChatOnClick" text="--&gt;" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="|   |||   |" />
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      
+   </center>
+   <center>
+      <Label text="Welcome Producer" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

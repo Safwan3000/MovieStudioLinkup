@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ConvertDialougeToSubtitlesController">
+   <children>
+      <ComboBox fx:id="LoadDialougeComboBox" layoutX="64.0" layoutY="69.0" prefHeight="31.0" prefWidth="187.0" promptText="Load Dialouge Files" />
+      <Button fx:id="ShowSelectedDialougeFileButton" layoutX="265.0" layoutY="69.0" mnemonicParsing="false" onAction="#ShowSelectedDialougeFileButtonOnClick" prefHeight="31.0" prefWidth="332.0" text="Show Selected Dialouge's Content in Text Area" />
+      <Text layoutX="184.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convert Dialouge Files to Subtitles">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="SeeDialougeFileTextArea" layoutX="40.0" layoutY="147.0" prefHeight="200.0" prefWidth="535.0" />
+      <Text layoutX="40.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See Your Dialouge File's Content:" />
+      <Button fx:id="ConvertDialougeToSubtitleButton" layoutX="182.0" layoutY="360.0" mnemonicParsing="false" onAction="#ConvertDialougeToSubtitleButtonOnClick" text="Convert Dialouge to Subtitle File" />
+      <Button fx:id="GoBackButton" layoutX="23.0" layoutY="399.0" mnemonicParsing="false" onAction="#GoBackButtonOnClick" text="Go Back" />
+      <Button fx:id="AskForFeedback" layoutX="462.0" layoutY="399.0" mnemonicParsing="false" onAction="#AskForFeedbackButtonOnClick" text="Ask For Feedback" />
+   </children>
+</AnchorPane>

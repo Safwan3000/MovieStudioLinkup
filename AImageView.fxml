@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AImageViewController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="276.0" fitWidth="555.0" layoutX="26.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="openImageButton" layoutX="225.0" layoutY="335.0" mnemonicParsing="false" onAction="#openImageOnClick" text="Open Image Button" />
+      <Button fx:id="GoBackButton" layoutX="26.0" layoutY="380.0" mnemonicParsing="false" onAction="#GoBackButtonOnClick" text="Go Back " />
+   </children>
+</AnchorPane>
